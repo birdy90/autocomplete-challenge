@@ -56,9 +56,9 @@ Here are the things I need to do:
 I decided to make a step-by-step checklist of all the thing that I'm planning to do to implement the challenge:
 
 - [ ] create template for input component
-  - [ ] styles for input border
-  - [ ] clear button
-  - [ ] hint
+  - [X] styles for input border
+  - [X] clear button
+  - [X] hint
   - [ ] results list with templates
 - [ ] implement store
 - [ ] search method with optional accessor method
@@ -70,3 +70,4 @@ I decided to make a step-by-step checklist of all the thing that I'm planning to
 - I'm going to use Levenstein's distance, as it allows me to make typos and still get results. I will use substrings (from the beginning of the string) of the same length as search input string to make results more fair
 - for styling, I prefer tailwind
 - default eslint config removes trailing semicolons. I am not used to this, but I decided to leave it as is
+- for icons I've used Heroicons library

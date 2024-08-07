@@ -1,7 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AutoCompleteInput from '@/components/autocomplete/AutoCompleteInput.vue'
+</script>
 
 <template>
-  <main class="min-h-dvh flex items-center justify-center">
-    <h1>Hello World</h1>
+  <main class="mx-auto py-4 w-full max-w-xl">
+    <div class="flex gap-4 items-stretch">
+      <AutoCompleteInput class="flex-grow" />
+      <AutoCompleteInput class="flex-grow" />
+    </div>
   </main>
 </template>
