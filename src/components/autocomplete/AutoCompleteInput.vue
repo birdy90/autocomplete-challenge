@@ -4,7 +4,7 @@ import { useId } from '@/composables/useId'
 import AutoCompleteResults from '@/components/autocomplete/AutoCompleteResults.vue'
 import { computed, inject, ref, toValue } from 'vue'
 import type { useSearchableCollection } from '@/composables/useSearchableCollection'
-import { pluralize } from '../../utilities'
+import { pluralize } from '@/utilities'
 import AutoCompleteHint from '@/components/autocomplete/AutoCompleteHint.vue'
 
 const { title } = defineProps<{
@@ -41,7 +41,12 @@ const onClear = () => {
         v-model="store.searchInput"
       />
 
-      <div v-if="store.searchInput" tabindex="0" @click="onClear" @keydown.enter.space="onClear">
+      <div
+        v-if="store.searchInput"
+        tabindex="0"
+        @click="onClear"
+        @keydown.enter.space.prevent="onClear"
+      >
         <XMarkIcon class="size-6 p-0.5 cursor-pointer text-gray-400 hover:text-gray-700" />
       </div>
     </div>
