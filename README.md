@@ -55,15 +55,18 @@ Here are the things I need to do:
 
 I decided to make a step-by-step checklist of all the thing that I'm planning to do to implement the challenge:
 
-- [ ] create template for input component
+- [X] create template for input component
   - [X] styles for input border
   - [X] clear button
   - [X] hint
-  - [ ] results list with templates
-- [ ] implement store
-- [ ] search method with optional accessor method
-- [ ] tests for search method
-- [ ] bind search logic to input component
+  - [X] results list
+  - [X] different data types
+- [X] implement store
+- [X] search method with optional accessor method
+- [X] tests for search method
+- [X] bind search logic to input component
+- [X] debounced input
+- [X] build before final push
 
 ## Additional thoughts
 
@@ -71,3 +74,4 @@ I decided to make a step-by-step checklist of all the thing that I'm planning to
 - for styling, I prefer tailwind
 - default eslint config removes trailing semicolons. I am not used to this, but I decided to leave it as is
 - for icons I've used Heroicons library
+- it is good to have input debounced, in case we'll have slow search methods in future
